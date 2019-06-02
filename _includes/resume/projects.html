@@ -1,0 +1,19 @@
+{% if site.nataresume.section_projects %}
+<section class="natasection">
+
+  <h2 class="title"><span>Projects</span></h2>
+
+  {% for project in site.data.projects %}
+  <div class="item">
+    <h3 class="item-title">{{ project.title }}</h3>
+    <h4 class="item-details">{{ project.date }}</h4>
+    <ul>
+      {% for detail in project.details %}
+      <li class="item-details">{{ detail }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+
+</section>
+{% endif %}

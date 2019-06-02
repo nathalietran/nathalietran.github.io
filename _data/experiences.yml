@@ -1,0 +1,16 @@
+# Data Scientist at SG
+- company: Société Générale
+  position: Data scientist
+  duration:  Apr, 2018 &mdash; Present
+  details:
+    - Worked with ALD Automotive, the operational leasing and fleet management business line of Societe Generale Group. This work focused on providing stress tests of the residual value of leased vehicles taking into account vehicle-related features, macroeconomic and car industry-specific variables. Also provides methods to predict the used car sales values of ready-to-lease vehicles.
+    - Participated in the implementation of an autoML library aikit. Mostly concentrated on the auto-clustering part as well as provided support on the overall maintenance of the project
+    - Designed a Dash web application as a pipeline tool to preprocess data. Researched and implemented a Python package of data science-based data imputation methods as a part of my 6-month internship.
+
+- company: TicTacTrip
+  position: Fullstack developer
+  duration:  Jul, 2016 &mdash; Sep, 2016
+  details:
+    - Worked and designed the website in AngularJS.
+    - Built a web scraper in Python (BeautifulSoup) to scrape data from bus and train tickets selling sites (such as Flixbus, Ouibus) to retrieve their arrival/departure graphs. Collected live data to feed into the website.
+    - Managed the postgreSQL database.

@@ -1,0 +1,19 @@
+{% if site.nataresume.section_experience %}
+<section class="natasection">
+
+  <h2 class="title"><span>Experience</span></h2>
+
+  {% for job in site.data.experiences %}
+  <div class="item">
+    <h3 class="item-title">{{ job.company }}</h3>
+    <h4 class="item-details">{{ job.position }} &bull; {{ job.duration }}</h4>
+    <ul>
+      {% for detail in job.details %}
+      <li class="item-details">{{ detail }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+
+</section>
+{% endif %}

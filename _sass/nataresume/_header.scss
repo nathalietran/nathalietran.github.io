@@ -1,0 +1,109 @@
+.natatitle {
+  header {
+  display: flex;
+
+  &:before,
+  &:after {
+    content: '';
+    padding: 0.35em;
+    margin: auto;
+    border-bottom: solid 1px;
+    flex: 1;
+    color: #eeeeee;
+  }
+  & h1 {
+    font-size: 20px;
+    position: relative;
+    padding: 0.25em 1em;
+    overflow: hidden;
+    color: #eeeeee;
+    background: linear-gradient(currentcolor, currentcolor) no-repeat top center, linear-gradient(currentcolor, currentcolor) no-repeat bottom center;
+    background-size: calc(100% - 1.65em) 1px;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      border: solid 1px;
+      border-top: none;
+      border-bottom: none;
+      transform: skew(47deg);
+      color: #eeeeee;
+    }
+    &:after {
+      transform: skew(-47deg)
+    }
+
+    & span {
+      color: black;
+    }
+  }
+}
+}
+
+
+.nataheader {
+  padding: 1.5rem 0;
+  border-bottom: none;
+  margin: 40px 0 -30px;
+
+
+  .name {
+    @include sans;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: -.15rem;
+    line-height: 1;
+    margin: 1rem 0 0;
+  }
+
+  .title {
+    display: flex;
+
+    &:before,
+    &:after {
+      content: '';
+      padding: 0.35em;
+      margin: auto;
+      border-bottom: solid 1px;
+      flex: 1;
+      color: #eeeeee;
+    }
+    & h1 {
+      font-size: 20px;
+      position: relative;
+      padding: 0.25em 1em;
+      overflow: hidden;
+      color: #eeeeee;
+      background: linear-gradient(currentcolor, currentcolor) no-repeat top center, linear-gradient(currentcolor, currentcolor) no-repeat bottom center;
+      background-size: calc(100% - 1.65em) 1px;
+
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border: solid 1px;
+        border-top: none;
+        border-bottom: none;
+        transform: skew(47deg);
+        color: #eeeeee;
+      }
+      &:after {
+        transform: skew(-47deg)
+      }
+
+      & span {
+        color: black;
+      }
+    }
+  }
+}

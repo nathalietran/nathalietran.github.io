@@ -1,0 +1,16 @@
+{% if site.nataresume.section_skills %}
+<section class="natasection">
+
+  <h2 class="title"><span>Skills</span></h2>
+
+  {% for section in site.data.skills %}
+  <div class="item">
+    <h3 class="item-title">{{ section.name }}</h3>
+    {% for skill in section.details %}
+    <span>{{skill}}</span> &nbsp;
+    {% endfor %}
+  </div>
+  {% endfor %}
+
+</section>
+{% endif %}

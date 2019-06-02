@@ -1,0 +1,21 @@
+.nataicons {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  top: 4px;
+  text-align: center;
+
+  .item {
+    display: inline-block;
+    margin-left: 5px;
+    width: 16px;
+    height: 16px;
+    padding: 5px 3px 2px 5px;
+  }
+
+  .icon {
+    height: 16px;
+    width: 16px;
+  }
+}

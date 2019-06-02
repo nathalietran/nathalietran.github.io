@@ -1,0 +1,30 @@
+- name: programming
+  details:
+    - Python
+    - R
+    - C/C++
+    - Scala
+    - JAVA
+    - LaTeX
+
+- name: web
+  details:
+    - Javascript
+    - AngularJS
+    - Django
+    - HTML5
+    - LESS
+    - SASS
+
+- name: databases
+  details:
+    - MYSQL
+    - postgreSQL
+    # - MangoDB
+    # - Hadoop
+
+- name: misc.
+  details:
+    - Git
+    - Bash
+    - Make

@@ -1,0 +1,23 @@
+{% if site.nataresume.section_education %}
+<section class="natasection">
+
+  <h2 class="title"><span>Education</span></h2>
+
+  {% for ed in site.data.education %}
+  <div class="item">
+    <h3 class="item-title">{{ ed.school }}</h3>
+    <h4 class="item-details">{{ ed.title }} &bull; {{ ed.duration }}</h4>
+    {% if ed.major %}
+    <h5 class="item-details">Majoring in {{ ed.major }}</h5>
+    {% endif %}
+    {% if ed.coursework %}
+    <span>Relevant coursework: </span>
+    {% for course in ed.coursework %}
+    <span>{{course}} &nbsp;</span>
+    {% endfor %}
+    {% endif %}
+  </div>
+  {% endfor %}
+
+</section>
+{% endif %}

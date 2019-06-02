@@ -1,0 +1,17 @@
+title: Natanotes
+job: Data Scientist
+description: #write an amazing description about yourself.
+author: Nathalie Tran
+email: your-email@domain.com
+
+
+nataresume:
+  social_links:
+    github: nathalietran
+    linkedin: tranathalie
+  section_education: true
+  section_experience: true
+  section_skills: true
+  section_projects: false
+
+#theme: nataresume
