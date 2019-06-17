@@ -1,5 +1,25 @@
 ---
 layout: default
 ---
+{% include navbar.html %}
+<div class="col-sm-8 col-sm-offset-2">
+  <article class="post">
 
-{{ content }}
+    <header class="post-header">
+      <h1 class="post-title">{{ page.title | escape }}</h1>
+      <p class="post-meta">
+        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">
+          {{ page.date | date: "%b %-d, %Y" }}
+        </time>
+        {%- if page.author -%}
+          • <span><span class="post-author">{{ page.author | escape }}</span></span>
+        {%- endif -%}</p>
+    </header>
+
+    <div class="post-content">
+      {{ content }}
+    </div>
+
+    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+  </article>
+</div>

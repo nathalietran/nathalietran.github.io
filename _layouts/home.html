@@ -1,13 +1,21 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
+<div class="col-sm-12 col-md-8 col-md-offset-2">
+  <div class="row">
+    {% for post in site.posts %}
 
-  {% include head.html %}
-
-  <body>
-    <div class="container">
-      {{content}}
-      {% include footer.html %}
+      <div class="col-xs-12 col-sm-6 col-md-6">
+        {%- assign date_format = "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h5>{{ post.title | escape }}</h5>
+        {{ post.excerpt }}
+        <p>
+          <a class="btn btn-default" href="{{ post.url | relative_url }}">
+            View details
+          </a>
+        </p>
     </div>
-  </body>
-
-</html>
+    {% endfor %}
+  </div>
+</div>

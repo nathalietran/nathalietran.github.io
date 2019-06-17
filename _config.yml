@@ -14,4 +14,7 @@ nataresume:
   section_skills: true
   section_projects: false
 
-#theme: nataresume
+collections:
+  nonposts:
+    output: true
+    permalink: /:name
